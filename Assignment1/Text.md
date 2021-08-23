@@ -1,6 +1,8 @@
-## Assignment 1
+# Assignment 1
+
 This assignment is to create your webpages with HTML.
 Requirement: Must have 2 HTML pages (10pt)
+
 * Page1: "index.html" (5pt), this page must include:
 a short bio about yourself.
 ○ at least 1 image (your picture, family picture, etc., under the “img” folder)
