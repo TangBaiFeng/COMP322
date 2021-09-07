@@ -1,0 +1,13 @@
+.underline {
+	text-decoration: underline;
+}
+.orange {
+	background-color: orange;
+}
+.boldred {
+	font-weight: bold;
+	color: red;
+}
+.mainBody {
+	width: 350px;
+}
