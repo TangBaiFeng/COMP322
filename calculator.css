@@ -1,0 +1,14 @@
+table,
+th,
+td {
+	width: 30%;
+	border: 1px solid black;
+	text-align: center;
+}
+th {
+	background-color: orange;
+	color: white;
+}
+td:nth-child(2) {
+	background-color: orange;
+}
