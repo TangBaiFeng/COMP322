@@ -1,14 +1,16 @@
 boolCheck = true;
-var mathTableUpdate = [0, 0, 0, 0, 0]; //Min, Max, Total, #of entries, Avg
+var mathTableUpdate = [Number.MAX_VALUE, Number.MIN_VALUE, 0, 0, 0]; //Min, Max, Total, #of entries, Avg
+
 while (boolCheck) {
 	let x = prompt("Value of x", 0);
 	let operator = prompt("operator", 0);
 	let y = prompt("Value of y", 0);
 	let result = resultAssign(x, operator, y);
 
-	boolCheck = confirm(result);
 	mathTableUpdate = mathTableUpdate(mathTableUpdate, result);
+	boolCheck = confirm(result);
 }
+
 /**
  * Assigns a value to result based on the operator
  * @param {*} x  first int
