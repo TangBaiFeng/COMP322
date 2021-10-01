@@ -10,89 +10,91 @@
 	</head>
 
 	<body>
-		<div>
-			<label for="fname">Username:</label>
-			<input type="text" /><br /><br />
-			<label for="fname">Email:</label>
-			<input type="text" /><br /><br />
-			<label for="fname">Phone number:</label>
-			<input type="text" /><br /><br />
-			<label for="fname">Enter Password:</label>
-			<input type="text" /><br /><br />
-			<label for="fname">Confirm Password:</label>
-			<input type="text" /><br /><br />
-		</div>
-		<div>
-			<label for="fname">Gender:</label>
-			<input type="radio" />
-			<label for="html">Female</label>
-			<input type="radio" />
-			<label for="html">Male</label>
-			<input type="radio" />
-			<label for="html">Other</label>
-			<br /><br />
-		</div>
-		<div>
-			<label for="cars">Age Group:</label>
-			<select>
-				<option value=""></option>
-				<option value="underTwentyOne">< 21 years old</option>
-				<option value="twentyFive">21 – 25 years old</option>
-				<option value="thirtyFive">26 – 35 years old</option>
-				<option value="fifty">36 – 50 years old</option>
-				<option value="overFifty">< 50 years old</option>
-			</select>
-			<br /><br />
-		</div>
-		<div>
-			<label for="music">Favorite Music Genre:</label
-			><input
-				type="checkbox"
-				id="vehicle1"
-				name="vehicle1"
-				value="Bike"
-			/>
-			<label for="vehicle1"> Pop</label
-			><input
-				type="checkbox"
-				id="vehicle1"
-				name="vehicle1"
-				value="Bike"
-			/>
-			<label for="vehicle1"> Hiphop</label
-			><input
-				type="checkbox"
-				id="vehicle1"
-				name="vehicle1"
-				value="Bike"
-			/>
-			<label for="vehicle1"> Jazz</label
-			><input
-				type="checkbox"
-				id="vehicle1"
-				name="vehicle1"
-				value="Bike"
-			/>
-			<label for="vehicle1"> Rock</label
-			><input
-				type="checkbox"
-				id="vehicle1"
-				name="vehicle1"
-				value="Bike"
-			/>
-			<label for="vehicle1"> Classical Music</label
-			><input
-				type="checkbox"
-				id="vehicle1"
-				name="vehicle1"
-				value="Bike"
-			/>
-			<label for="vehicle1"> Country</label>
-			<br /><br />
-		</div>
-		<div>
-			<input type="submit" value="submit" />
-			<input type="submit" value="clear" />
-		</div>
+		<form name="validator">
+			<div>
+				<label for="username">Username:</label>
+				<input type="text" name="username" /><br /><br />
+				<label for="email">Email:</label>
+				<input type="text" name="email" /><br /><br />
+				<label for="phonenumber">Phone number:</label>
+				<input type="text" name="phonenumber" /><br /><br />
+				<label for="password">Enter Password:</label>
+				<input type="password" name="password" /><br /><br />
+				<label for="passwordconfirm">Confirm Password:</label>
+				<input type="password" name="passwordconfirm" /><br /><br />
+			</div>
+			<div>
+				<label>Gender:</label>
+				<input type="radio" name="female" />
+				<label for="female">Female</label>
+				<input type="radio" name="male" />
+				<label for="male">Male</label>
+				<input type="radio" name="other" />
+				<label for="other">Other</label>
+				<br /><br />
+			</div>
+			<div>
+				<label>Age Group:</label>
+				<select>
+					<option value=""></option>
+					<option value="underTwentyOne">< 21 years old</option>
+					<option value="twentyFive">21 – 25 years old</option>
+					<option value="thirtyFive">26 – 35 years old</option>
+					<option value="fifty">36 – 50 years old</option>
+					<option value="overFifty">< 50 years old</option>
+				</select>
+				<br /><br />
+			</div>
+			<div>
+				<label for="music">Favorite Music Genre:</label
+				><input
+					type="checkbox"
+					id="vehicle1"
+					name="vehicle1"
+					value="Bike"
+				/>
+				<label for="vehicle1"> Pop</label
+				><input
+					type="checkbox"
+					id="vehicle1"
+					name="vehicle1"
+					value="Bike"
+				/>
+				<label for="vehicle1"> Hiphop</label
+				><input
+					type="checkbox"
+					id="vehicle1"
+					name="vehicle1"
+					value="Bike"
+				/>
+				<label for="vehicle1"> Jazz</label
+				><input
+					type="checkbox"
+					id="vehicle1"
+					name="vehicle1"
+					value="Bike"
+				/>
+				<label for="vehicle1"> Rock</label
+				><input
+					type="checkbox"
+					id="vehicle1"
+					name="vehicle1"
+					value="Bike"
+				/>
+				<label for="vehicle1"> Classical Music</label
+				><input
+					type="checkbox"
+					id="vehicle1"
+					name="vehicle1"
+					value="Bike"
+				/>
+				<label for="vehicle1"> Country</label>
+				<br /><br />
+			</div>
+			<div>
+				<input type="submit" value="submit" />
+				<input type="submit" value="clear" />
+			</div>
+		</form>
 	</body>
 </html>
