@@ -25,14 +25,14 @@
 			</div>
 			<div>
 				<label>Gender:</label>
-				<input type="radio" name="female" />Female
-				<input type="radio" name="male" />Male
-				<input type="radio" name="other" />Other <br /><br />
+				<input type="radio" name="gender" value="female" />Female
+				<input type="radio" name="gender" value="male" />Male
+				<input type="radio" name="gender" value="other" />Other <br /><br />
 			</div>
 			<div>
 				<label>Age Group:</label>
-				<select>
-					<option value=""></option>
+				<select name="age">
+					<option value="empty"></option>
 					<option value="underTwentyOne">< 21 years old</option>
 					<option value="twentyFive">21 – 25 years old</option>
 					<option value="thirtyFive">26 – 35 years old</option>
@@ -42,32 +42,19 @@
 				<br /><br />
 			</div>
 			<div>
-				Favorite Music Genre:<input type="checkbox" id="vehicle1" />
-				Pop<input
+				Favorite Music Genre:<input type="checkbox" id="vehicle1" /> Pop<input
 					type="checkbox"
 					id="vehicle1"
 					name="vehicle1"
 					value="Bike"
 				/>
-				Hiphop<input
+				Hiphop<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" /> Jazz<input
 					type="checkbox"
 					id="vehicle1"
 					name="vehicle1"
 					value="Bike"
 				/>
-				Jazz<input
-					type="checkbox"
-					id="vehicle1"
-					name="vehicle1"
-					value="Bike"
-				/>
-				Rock<input
-					type="checkbox"
-					id="vehicle1"
-					name="vehicle1"
-					value="Bike"
-				/>
-				Classical Music<input
+				Rock<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" /> Classical Music<input
 					type="checkbox"
 					id="vehicle1"
 					name="vehicle1"
@@ -77,9 +64,10 @@
 				<br /><br />
 			</div>
 			<div>
-				<input type="submit" value="submit" />
-				<input type="submit" value="clear" />
+				<input type="button" onclick="validateForm()" value="submit" />
+				<input type="button" onclick="reset()" value="reset" />
 			</div>
+			<p id="errorLog">test</p>
 		</form>
 	</body>
 </html>
