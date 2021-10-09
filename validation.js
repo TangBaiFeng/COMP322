@@ -88,10 +88,11 @@ function empty(emptyElement) {
 }
 function invalid(invalidElement) {
 	document.getElementById("errorLog").innerHTML +=
-		"Please enter a valid  " + "<span style='color:yellow'>" + invalidElement + "</span> <br/>";
+		"Please enter a valid  " + "<span style='color:orange'>" + invalidElement + "</span> <br/>";
 }
 function reset() {
 	document.getElementById("validator").reset();
+	document.getElementById("errorLog").innerHTML = "";
 }
 
 function confirmPassword(password) {
