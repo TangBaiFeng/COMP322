@@ -91,7 +91,6 @@ function invalid(invalidElement) {
 		"Please enter a valid  " + "<span style='color:orange'>" + invalidElement + "</span> <br/>";
 }
 function reset() {
-	document.getElementById("validator").reset();
 	document.getElementById("errorLog").innerHTML = "";
 }
 
