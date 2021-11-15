@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>Intrinsic Event Attributes</title>
+		<script>
+			function reportEvent() {
+				let rep = document.getElementById("rep");
+				rep.innerHTML += "Event <br/>";
+			}
+		</script>
+	</head>
+	<body>
+		<p ondblclick="reportEvent()">Double Click</p>
+		<p onmousedown="reportEvent()">Mouse Down</p>
+		<p onmouseup="reportEvent()">Mouse Up</p>
+		<div id="rep"></div>
+	</body>
+</html>
