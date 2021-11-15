@@ -81,7 +81,6 @@ function vAge() {
 		return true;
 	}
 }
-function vMusic() {}
 function empty(emptyElement) {
 	document.getElementById("errorLog").innerHTML +=
 		"Please Select " + "<span style='color:red'>" + emptyElement + "</span> <br/>";
@@ -91,8 +90,8 @@ function invalid(invalidElement) {
 		"Please enter a valid  " + "<span style='color:orange'>" + invalidElement + "</span> <br/>";
 }
 function reset() {
-	document.getElementById("validator").reset();
 	document.getElementById("errorLog").innerHTML = "";
+	document.getElementById("validator").reset();
 }
 
 function confirmPassword(password) {
