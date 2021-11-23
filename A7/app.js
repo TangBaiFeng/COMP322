@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("cors");
+const cors = require("cors"); // Added this since my browser disables cors
 const app = express();
 app.use(cors());
 const port = 3000;
@@ -10,7 +10,6 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
 	console.log(`Example app listening on port ${port}!`);
 });
-
 app.get("/grade", function (req, res) {
 	res.send("Get a GET request at /grade, Troy ");
 });
